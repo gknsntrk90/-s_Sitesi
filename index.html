@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Sitesi</title>
+    <!--*FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--*BOOTSTRAP LİNK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--*CSS LİNK-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+                                            <!--* HEADER NAVBAR-->
+    <header id="header">
+        <div class="menu-bar">
+            <!--bg-dark ile arka planı siyah yaptık navbar-dark ile sağda tıklanan butonu dark yaptık-->
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">İş Arama Plaformu</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--ms-auto ile yazıların arasında boşluk bırakıyoruz-->
+                    <!--float-end ile yazıları sağ tarafa sabitliyoruz-->
+                    <ul class="navbar-nav ms-auto float-end">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Tüm İşler</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Şirketler</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Güncel İşler</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Diğer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Staj</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <!--text-center ile bu yazıları ortalıyoruz-->
+        <div class="banner text-center">
+            <h1>İş ilanları sizleri bekliyor</h1>
+            <p>Size uyugun iş ilanlarını inceleyebilirsiniz</p>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <!--*SEARCH JOB-->
+<!---text-center ile ortalama yapıyoruz-->
+<div class="search-job text-center">
+    <!--form-control bootstrapten gelen formu yönetmemizi sağlıyor-->
+    <input type="text" class="form-control" placeholder="pozisyon bilgisi giriniz">
+    <input type="text" class="form-control" placeholder="Şirket adı giriniz">
+    <input type="text" class="form-control" placeholder="Şehir adı giriniz">
+    <!--btn btn-primary classı ile mavi buton yapmış oluyor tabi ki type 'da button yapacağız'-->
+    <input type="button" class="btn btn-primary" value="İş bul">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--* TOP JOBS-->
+
+<section id="jobs">
+    <!---container classına yukarıda kllandığımız hazır text-center boots'unu veriyoruz-->
+    <div class="container text-center">
+        <h3>POPÜLER İŞLER</h3>
+        <div>
+            <img src="Images/udemig-logo.jpeg" alt="">
+            <img src="Images/arabuleu-logo.png" alt="">
+            <img src="Images/netflix-logo.jpeg" alt="">
+            <img src="Images/apple-logo.jpeg" alt="">
+            <img src="Images/amazon-logo.svg" alt="">
+            <img src="Images/jbl-logo.png" alt="">
+        </div>
+        <div>
+            <img src="Images/adidas-logo.webp" alt="">
+            <img src="Images/gratis-logo.png" alt="">
+            <img src="Images/samsung-logo.avif" alt="">
+            <img src="Images/microsoft-logo.jpeg" alt="">
+            <img src="Images/tesla-logo.png" alt="">
+            <img src="Images/fedex-logo.png" alt="">
+        </div>
+        <div>
+            <img src="Images/sony-logo.png" alt="">
+            <img src="Images/socar-logo.png" alt="">
+            <img src="Images/cococola-logo.jpeg" alt="">
+            <img src="Images/pringles-logo.webp" alt="">
+            <img src="Images/redbull-logo.png" alt="">
+            <img src="Images/doritos-logo.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--*JOB İNFO-->
+<section id="top-job">
+    <div class="container">
+        <h5>EN SON GÜNCELLEMELER</h5>
+        <div class="company-details">
+            <div class="job-update">
+                <h4><b>Senior Frontend Developer</b></h4>
+                <p>Umbrella Software Company</p>
+                <i class="fa-solid fa-briefcase"></i> <span>0-1 yıl</span> 
+                <br>
+                <i class="fa-solid fa-dollar-sign"></i> <span>3.500 - 4.000</span> 
+                <br>
+                <i class="fa-solid fa-location-dot"></i> <span>Tokyo</span>
+                <p>Yetenekler: <small>JavaScript</small> <small>Html,Css</small> <small>React</small></p>
+                <p>Detaylar için websitemizi ziyaret ediniz. <a href="#">Daha fazla</a></p>
+            </div>
+            <div class="apply-btn">
+                <button type="button" class="btn btn-primary">İncele</button>
+            </div>
+        </div>
+
+        <div class="company-details">
+            <div class="job-update">
+                <h4><b>Senior Frontend Developer</b></h4>
+                <p>Alienware Software Company</p>
+                <i class="fa-solid fa-briefcase"></i> <span>0-1 yıl</span> 
+                <br>
+                <i class="fa-solid fa-dollar-sign"></i> <span>3.500 - 4.000</span> 
+                <br>
+                <i class="fa-solid fa-location-dot"></i> <span>İstanbul</span>
+                <p>Yetenekler: <small>JavaScript</small> <small>Html,Css</small> <small>React</small></p>
+                <p>Detaylar için websitemizi ziyaret ediniz. <a href="#">Daha fazla</a></p>
+            </div>
+            <div class="apply-btn">
+                <button type="button" class="btn btn-primary">İncele</button>
+            </div>
+        </div>
+
+        <div class="company-details">
+            <div class="job-update">
+                <h4><b>Junior Frontend Developer</b></h4>
+                <p>KONAMİ Software Company</p>
+                <i class="fa-solid fa-briefcase"></i> <span>2-3 yıl</span> 
+                <br>
+                <i class="fa-solid fa-dollar-sign"></i> <span>1.500 - 2.000</span> 
+                <br>
+                <i class="fa-solid fa-location-dot"></i> <span>Belgrad</span>
+                <p>Yetenekler: <small>JavaScript</small> <small>Html,Css</small> <small>React</small></p>
+                <p>Detaylar için websitemizi ziyaret ediniz. <a href="#">Daha fazla</a></p>
+            </div>
+            <div class="apply-btn">
+                <button type="button" class="btn btn-primary">İncele</button>
+            </div>
+        </div>
+        <!--text-center ile otomatik ortalama veriyoruz-->
+        <ul class="page-link text-center">
+            <!--bu kod ile soldan nokta ve ortaladan ok işareti elde ettik-->
+            <li class="left-arrow">&#8592; </li>
+            <!--active geçerli class demek ön planda olacak-->
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li class="right-arrow">&#8594; </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--*Site Stats-->
+<section id="site-stats">
+    <!--text-center veriyorz ki ortalanson yukarıdakiler gibi-->
+    <div class="container text-center">
+        <h3>İSTATİSTİKLERİMİZ</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="stats-box">
+                            <i class="fa-solid fa-user"></i> <span><small>100k</small></span>
+                            <p>İş arayanlar</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="stats-box">
+                            <i class="fa-solid fa-user"></i> <span><small>100+</small></span>
+                            <p>İş verenler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="stats-box">
+                            <i class="fa-solid fa-user"></i> <span><small>10k</small></span>
+                            <p>Aktif iş</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="stats-box">
+                            <i class="fa-solid fa-user"></i> <span><small>500+</small></span>
+                            <p>Şirketler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--*FOOTER-->
+<footer class="footer">
+    <!--yukarıdakiler gibi text-center ile ortalıyoruz bootsla-->
+    <h2 class="text-center mb-3"><i class="fa-regular fa-hand-peace"></i>İş İlanı Sayfası</h2>
+    <p class="text-center">İş ilanlarını kaçırmamak için bizi takip etmeyi unutmayın.</p>
+    <div class="social-buttons">
+        <img src="Images/twitter-icon.png" alt="">
+        <img src="Images/instagram-icon.png" alt="">
+        <img src="Images/linkedin-icon.png" alt="">
+        <img src="Images/whatsapp-icon.png" alt="">
+    </div>
+    <p class="text-center mt-5">2024 Tüm Hakları Saklıdır.</p>
+</footer>
+
+    <!--! JAVASCRİPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

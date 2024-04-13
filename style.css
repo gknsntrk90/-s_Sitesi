@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**Banner Alanı***/
+
+.banner{
+    /***vh ile açılan pencerenin yüzde 80'i demek**/
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/Images/group.jpeg);
+    /**arka plan boyutu resimde***/
+    background-size: cover;
+    /**arka plan pozisyonu ortalıyoruz***/
+    background-position: center;
+    color: white;
+}
+/**banner clasının içindeki h1***/
+.banner h1{
+    /**yukarı kısımden iç boşluk ver padding-top ile**/
+    padding-top: 170px;
+    font-size: 50px;
+    /***harfler arası boşluk veriyoruz***/
+    letter-spacing: 6px;
+    /***yazı kalınlığı***/
+    font-weight: 600px;
+    /***h1 başlığının arkasına hafif bir turuncu gölge atmış oluyoruz***/
+    text-shadow: 0 0 30px orange; 
+}
+
+
+
+/**İNPUT ALANI***/
+.search-job{
+    padding: 30px 0; /**yukarıdan aşağı 30px sağdan soldan sıfır**/
+    margin: -50px 6% 50px;
+    /**to right sağ doğru renk geçişi***/
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+/**search-job clası içinde form control classına geçiyoruz***/
+.search-job .form-control{
+    max-width: 250px; /**maximum genişliğin 250px***/
+    display: inline-flex; /**hem satır içi esneklik kazan hem de esnek bir yapıda ol***/
+    margin: 10px 5px; /***yukarıdan aşağıdan 10 sağdan soldan 5px***/
+    border-radius: 0;
+    box-shadow: none !important;
+    border: 0;
+}
+.search-job .btn-primary{
+    border-radius: 0;
+    box-shadow: none !important;
+    border: 0;
+    display: inline-flex; /**hem satır içi esneklik kazan hem de esnek bir yapıda ol***/
+    margin: 5px; /***dış boşluk***/
+    padding: 5px 20px; /***iş boşluk***/
+}
+
+
+
+
+
+
+
+
+/***JOB İCONS***/
+#jobs{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#jobs .h3{
+    padding-bottom: 30px;
+}
+/***h3 öncesinde nasıl bir html elemanı gelmesini isteyeceğiz burada***/
+h3::before{
+content: "";
+background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+width: 50px;
+height: 30px;
+position: absolute; /***position ile görseli elde ediyoruz **/
+z-index: -100; /***bu sayede yazıyı çıkan rengin üzerine alıyoruz***/
+margin-top: -15px;
+/**yukarı sol kısımdan oval yapma***/
+border-top-left-radius: 70px;
+/**yukarı aşağı kısımdan oval yapma ve bottom yazma***/
+border-bottom-right-radius: 80px;
+}
+#jobs img{
+    /**resimlerimizin maximum boyutları 100px olsun***/
+    max-width: 100px;
+    margin: 10px 20px; /**yukarıdan aşağıdan 10 sağdan soldan 20px**/
+
+}
+
+
+
+
+
+/***JOB INFO**/
+#top-job{
+    /***background ile arka fonu hafif koyulaştırdık**/
+    background: #f8f8fa;
+    padding: 50px 0;
+}
+.company-details{
+    /**box shadow ile border tarzı bir kalıp kullandık arka fona gölgeli olarak***/
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.job-update{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.job-update .fa-solid{
+    /**icon işlemleri yapıyoruz***/
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #77d1b1;
+}
+.job-update .small{
+    background-color: #efefef;
+    padding: 1px 5px;
+    margin: 0 5px;
+}
+.job-update a{
+    text-decoration: none;
+    color: #b6bed2;
+    float: right; /**daha fazla yazısını sağ alta yasladık***/
+}
+.apply-btn{
+    height: 40px;
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+    padding: 7px; /**iç boşluk**/
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.apply-btn .btn-primary{
+    padding: 0 30px; /***iç boşluk sıfır a 30px veriyoruz***/
+    float: right; /**buttonu sağ tarafa alıyoruz***/
+    border-radius: 0;
+    background: transparent;  /**butonun arkaplanını aynı renk yap****/
+    box-shadow: none;
+    border: 1px solid #fff;
+}
+.apply-btn .btn-primary:hover{
+    background-color: #0070c1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***PAGE LİNK ***/
+.page-link li{
+    height: 25px;
+    width: 25px;
+    list-style: none; /***noktaları silyoruz***/
+    display: inline-block; /**hem satır gibi yanyana gelsin rakamlar hemde satır için block olsun***/
+    cursor: pointer;
+}
+.page-link li:hover,.active{
+    color: #fff;
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+.left-arrow{
+    color: #999;
+}
+.right-arrow{
+    color: #29b929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***SİTE STATS***/
+#site-stats{
+    padding: 100px 0;
+}
+#site-stats h3{
+    margin-bottom: 30px; /**sayfanın alt kısmında boşluk verdik***/
+}
+.stats-box{
+    padding: 30px; /**iç boşluk**/
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 40px rgba(110, 130, 208, 0.18);
+}
+/***iconlar**/
+.stats-box .fa{
+    font-size: 30px;
+    margin-right: 10px; /**sağdan boşluk ver***/
+    margin-bottom: 10px; /**alttan boşluk ver***/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***FOOTER***/
+.footer{
+    background-image: linear-gradient(to right,#6db9ef,#7ce08a);
+    padding: 20px; /***iç boşluk**/
+}
+.social-buttons{
+    display: flex; /***yanyana getir***/
+    align-items: center; /***ortala***/
+    justify-content: space-around; /***aralarındaki boşluklar eşit olsun****/
+}
+.social-buttons img{
+    max-width: 100px; /***max genişlik 100px***/
+    
+}
